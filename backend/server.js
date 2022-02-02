@@ -69,6 +69,10 @@ app.use('/users', usersRouter); //now, when someone goes to our root url and put
 
 
 
+//when posted on heroku, fronted will read the compiled code instead of code in 'src' folder
+// app.use(express.static(path.join(__dirname, "")))
+
+
 //~~~~~~~~~~~~~~~~~~~~~~~~//
 //~~~STARTS THE SERVER~~~//
 //~~~~~~~~~~~~~~~~~~~~~~//
