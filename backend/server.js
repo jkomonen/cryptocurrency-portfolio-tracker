@@ -46,7 +46,7 @@ app.use(express.json());
 //~~~CONNECT TO MONGODB~~~//
 //~~~~~~~~~~~~~~~~~~~~~~~//
 const uri = process.env.ATLAS_URI; //this is our database uri which we have to get from mongodb atlas dashboard
-mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true } //pass in 'uri' cuz thats where our database is stored and thats how we start our connection
+mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true } //pass in 'uri' cuz thats where our database is stored and thats how we start our connection
 );
 const connection = mongoose.connection;
 connection.once('open', () => { //once the connection is open, log that mongodb connection is successful
