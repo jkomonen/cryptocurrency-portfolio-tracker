@@ -29,7 +29,6 @@ export default class CreateCrypto extends Component {
     }
   }
 
-
   //this is a react lifecycle method. componentDidMount() will auto be called right before anything displays on the page
   //were coding the dropdown menu
   componentDidMount() {
